@@ -11,6 +11,7 @@ jobs:
           command: |
             apt-get update
             apt-get install -y wget sudo
+            mkdir /etc/pihole/
             wget -O /etc/pihole/setupVars.conf https://pastebin.com/raw/YBpWALGg
             wget -O basic-install.sh https://install.pi-hole.net
             sudo bash basic-install.sh
